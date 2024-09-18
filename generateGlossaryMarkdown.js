@@ -88,18 +88,34 @@ var terms = [
         technical: "An API endpoint is a specific URL or URI within an API that represents a distinct function or resource, allowing clients to interact with the server by sending requests and receiving responses.",
         videoURL: "https://www.youtube.com/embed/exampleVideo1", // No video provided
         exampleURL: null,
+    },
+    {
+        term: 'Dashboard',
+        nonTechnical: "The Magic Loops dashboard presents you with different options for working with Magic Loops. There are the following sections: \n\n- New Manual Loop \n- Templates \n- My Loops \n- Runs \n- Blocks",
+        technical: '',
+        videoURL: "https://www.youtube.com/embed/exampleVideo1",
+        exampleURL: null, // Example URL can be added here
+    },
+    {
+        term: 'Manual Loop',
+        nonTechnical: "Manual Loops are Magic Loops that you create by typing in a prompt. After you type in a prompt, generative AI first deduces what type of Blocks you will need to achieve the task you are trying to complete. It does this by creating an outline.",
+        technical: 'A',
+        videoURL: "https://www.youtube.com/embed/exampleVideo1",
+        exampleURL: null, // Example URL can be added here
     }
 ];
+// Define the path to the docs and sidebars
 var docsPath = (0, path_1.join)(process.cwd(), 'docs');
+var sidebarsPath = (0, path_1.join)(process.cwd(), 'sidebars.ts');
 // Function to generate markdown content with embedded video iframe
 var generateMarkdownContent = function (_a) {
     var term = _a.term, nonTechnical = _a.nonTechnical, technical = _a.technical, videoURL = _a.videoURL, exampleURL = _a.exampleURL;
-    var markdownContent = "# ".concat(term, "\n  \n  ## Non-Technical Description\n  ").concat(nonTechnical, "\n  \n  ## Technical Description\n  ").concat(technical, "\n  ");
+    var markdownContent = "# ".concat(term, "\n\n## Non-Technical Description\n").concat(nonTechnical, "\n\n## Technical Description\n").concat(technical, "\n");
     if (videoURL) {
-        markdownContent += "\n  ## Video Example\n  <iframe width=\"560\" height=\"315\" src=\"".concat(videoURL, "\" title=\"").concat(term, " video\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n  ");
+        markdownContent += "\n## Video Example\n<iframe width=\"560\" height=\"315\" src=\"".concat(videoURL, "\" title=\"").concat(term, " video\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n");
     }
     if (exampleURL) {
-        markdownContent += "\n  ## Example Link\n  [See Example](".concat(exampleURL, ")\n  ");
+        markdownContent += "\n## Example Link\n[See Example](".concat(exampleURL, ")\n");
     }
     return markdownContent;
 };
@@ -110,13 +126,26 @@ var generateGlossaryMarkdown = function () {
         (0, fs_1.mkdirSync)(docsPath);
     }
     // Generate a markdown file for each term in the glossary
+    var sidebarItems = [];
     terms.forEach(function (termObj) {
         var markdownContent = generateMarkdownContent(termObj);
-        var filePath = (0, path_1.join)(docsPath, "".concat(termObj.term.toLowerCase().replace(/\s+/g, '-'), ".md"));
+        var fileName = "".concat(termObj.term.toLowerCase().replace(/\s+/g, '-'), ".md");
+        var filePath = (0, path_1.join)(docsPath, fileName);
         // Write the markdown content to a file
         (0, fs_1.writeFileSync)(filePath, markdownContent, 'utf8');
         console.log("Generated ".concat(filePath));
+        // Add the term to the sidebar items list
+        sidebarItems.push(fileName.replace('.md', ''));
     });
+    // Update the sidebars.ts file
+    updateSidebars(sidebarItems);
+};
+// Function to update the sidebars.ts file
+var updateSidebars = function (items) {
+    var sidebarContent = "\nconst sidebars = {\n  sidebar: [\n    {\n      type: 'category',\n      label: 'Glossary of Terms',\n      items: [\n        ".concat(items.map(function (item) { return "'".concat(item, "'"); }).join(',\n        '), ",  \n      ],\n    },\n  ],\n};\n\nexport default sidebars;\n");
+    // Write the updated sidebar content to the sidebars.ts file
+    (0, fs_1.writeFileSync)(sidebarsPath, sidebarContent, 'utf8');
+    console.log("Updated ".concat(sidebarsPath));
 };
 // Run the script
 generateGlossaryMarkdown();

@@ -94,8 +94,23 @@ const terms: Term[] = [
     technical: "An API endpoint is a specific URL or URI within an API that represents a distinct function or resource, allowing clients to interact with the server by sending requests and receiving responses.",
     videoURL: "https://www.youtube.com/embed/exampleVideo1", // No video provided
     exampleURL: null,
+  },
+  {
+    term: 'Dashboard',
+    nonTechnical: "The Magic Loops dashboard presents you with different options for working with Magic Loops. There are the following sections: \n\n- New Manual Loop \n- Templates \n- My Loops \n- Runs \n- Blocks",
+    technical: '',
+    videoURL: null, // Replace with actual video URL
+    exampleURL: null, // Example URL can be added here
+  },
+  {
+    term: 'Manual Loop',
+    nonTechnical: "Manual Loops are Magic Loops that you create by typing in a prompt. After you type in a prompt, generative AI first deduces what type of Blocks you will need to achieve the task you are trying to complete. It does this by creating an outline.",
+    technical: 'A',
+    videoURL: "https://www.youtube.com/embed/exampleVideo1",
+    exampleURL: null, // Example URL can be added here
   }
 ];
+
 
 const ToggleTerms: React.FC = () => {
   const [isTechnical, setIsTechnical] = useState(false);
