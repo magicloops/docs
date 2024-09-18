@@ -1,3 +1,5 @@
+import React from 'react';
+
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -20,7 +22,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Magic Loops Tutorial - 5min ⏱️
           </Link>
         </div>
       </div>
