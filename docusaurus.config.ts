@@ -109,6 +109,10 @@ const config: Config = {
               label: 'Twitter',
               href: 'https://twitter.com/magicloopsdev',
             },
+            {
+              label: 'YouTube',
+              href: 'https://www.youtube.com/@magicloopsdev?sub_confirmation=1',
+            },
           ],
         },
         {
