@@ -1,26 +1,43 @@
-
 const sidebars = {
   sidebar: [
-    {
-      type: 'category',
-      label: 'Glossary of Terms',
-      items: [
-        'loops',
-        'runs',
-        'blocks',
-        'time-trigger',
-        'output-variable',
-        'authorization-token',
-        'fetch',
-        'json',
-        'templates',
-        'markdown',
-        'scrape',
-        'api-endpoint',
-        'dashboard',
-        'manual-loop',  
-      ],
-    },
+      {
+          type: 'category',
+          label: 'Introduction',
+          items: [
+              'dashboard',
+              'manual-loop'
+          ],
+      },
+      {
+          type: 'category',
+          label: 'Automation Components',
+          items: [
+              'loops',
+              'blocks',
+              'time-trigger',
+              'runs',
+              'output-variable'
+          ],
+      },
+      {
+          type: 'category',
+          label: 'Technical & API Concepts',
+          items: [
+              'authorization-token',
+              'api-endpoint',
+              'fetch',
+              'json',
+              'markdown'
+          ],
+      },
+      {
+          type: 'category',
+          label: 'Data Processing & Scraping',
+          items: [
+              'scrape',
+              'templates'
+          ],
+      }
   ],
 };
 

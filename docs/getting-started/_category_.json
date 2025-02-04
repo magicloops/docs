@@ -1,8 +1,8 @@
 {
-    "label": "Magic", 
+    "label": "Magic Loops Documentation", 
     "position": 2, 
     "link": {
         "type": "generated-index", 
-        "description": "This is a custom description"
+        "description": "Explore the complete documentation of Magic Loops, including automation workflows, glossary terms, API integrations, and advanced configurations."
     }
 }
