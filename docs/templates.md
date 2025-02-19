@@ -1,74 +1,83 @@
 # Templates Documentation 
 
 ## **Definition**  
-**Templates** are **pre-built Magic Loops** that users can **copy, customize, and deploy** based on their automation needs. These templates are created by the **Magic Loops team** or other **Magic Loops users**, providing ready-to-use workflows for common automation tasks.  
+**Templates** in Magic Loops come in two main forms: **Block Templates** and **Loop Templates**. They provide ready-to-use components that users can customize and deploy based on their automation needs.
 
 ---
 
-## **How Templates Work**  
+## **Block Templates**  
 
-1. **Select a Template** → Choose a pre-made loop from the template library.  
-2. **Customize Blocks** → Modify inputs, outputs, and logic to match your requirements.  
-3. **Deploy the Loop** → Activate and monitor the loop execution.  
+Block Templates are pre-built, configurable blocks designed for specific tasks:
 
-Templates **eliminate the need to build automation from scratch**, saving time while maintaining flexibility.  
+### **1. Loop Batch Runner** 🔄
+- Executes multiple Magic Loops in sequence
+- Processes arrays of inputs efficiently
+- Handles API responses and error management
+- Perfect for bulk operations
 
----
+### **2. QuickChartData Viz** 📊
+- Visualizes data using QuickChart
+- Supports multiple chart types
+- Customizable styling and formatting
+- Ideal for data reporting
 
-## **Example Use Cases for Templates**  
-
-### **1. Daily Email Summary Template** 📩  
-- **Function:** Sends a daily email summary of trending news.  
-- **Customization:** Change the news source, summary length, or email recipient.  
-
-### **2. Social Media Auto-Poster Template** 📢  
-- **Function:** Fetches content from an API and posts it to Twitter or Facebook.  
-- **Customization:** Adjust posting frequency, hashtags, or content filters.  
-
-### **3. Web Scraper & Data Formatter Template** 🌐  
-- **Function:** Scrapes a website and structures the data in JSON format.  
-- **Customization:** Change the target website, data fields, or output format.  
+### **3. Sheety (GET)** 📑
+- Integrates with Google Sheets via Sheety
+- Fetches spreadsheet data automatically
+- Supports authentication
+- Perfect for data management
 
 ---
 
-## **Example JSON Representation of a Template**  
+## **Loop Templates**  
 
+Loop Templates are complete workflow templates that combine multiple blocks:
+
+### **Common Loop Templates** 
+- **Daily Report Generator** → Automated reporting
+- **Social Media Publisher** → Content scheduling
+- **Data Scraper & Processor** → Web data extraction
+- **API Monitor** → Service monitoring
+
+---
+
+## **Using Templates**
+
+### **Block Template Usage**
 ```json
 {
-  "template_name": "Daily News Email",
-  "description": "Sends a daily email summary of top news articles.",
-  "blocks": [
-    {
-      "type": "time",
-      "trigger": "07:00 AM",
-      "output": "$TIME_TRIGGER"
-    },
-    {
-      "type": "scrape",
-      "source": "https://news.example.com",
-      "output": "$NEWS_DATA"
-    },
-    {
-      "type": "llm_call",
-      "input": "$NEWS_DATA",
-      "output": "$SUMMARY"
-    },
-    {
-      "type": "email",
-      "recipient": "user@example.com",
-      "subject": "Daily News Update",
-      "body": "$SUMMARY"
+  "template": "QuickChartData Viz",
+  "configuration": {
+    "chartType": "bar",
+    "data": {
+      "labels": ["Q1", "Q2", "Q3", "Q4"],
+      "datasets": [{
+        "label": "Sales",
+        "data": [100, 200, 150, 300]
+      }]
     }
-  ]
+  }
+}
+```
+
+### **Loop Template Usage**
+```json
+{
+  "template": "Daily Report",
+  "configuration": {
+    "schedule": "09:00 AM",
+    "dataSources": ["website", "api"],
+    "recipients": ["team@example.com"]
+  }
 }
 ```
 
 ---
 
+## **Best Practices**
 
-## **Benefits of Using Templates**  
-
-✅ **Time-Saving** → No need to build a loop from scratch.  
-✅ **Customizable** → Modify pre-built templates to fit your needs.  
-✅ **Reliable** → Created by experienced users and the Magic Loops team.  
-✅ **Scalable** → Reuse templates across different automation workflows.  
+✅ **Start with Templates** → Use them as building blocks
+✅ **Customize Gradually** → Modify templates incrementally
+✅ **Combine Templates** → Mix different templates for complex workflows
+✅ **Share Templates** → Contribute to the community
+✅ **Version Control** → Track template modifications

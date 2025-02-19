@@ -1,33 +1,115 @@
 # Introduction to Magic Loops 
 
-## **Welcome to Magic Loops!**  
-Welcome to the **official Magic Loops documentation**—your go-to resource for learning how to build and manage automated workflows with ease.  
-
-Explore detailed guides on **Loops, Blocks, Variables, API integrations, and more** to help you streamline your automation processes efficiently.  
+## **Welcome to Magic Loops!** 
+Welcome to the **official Magic Loops documentation**—your comprehensive guide to building AI-powered automation. Magic Loops enables you to create everything from simple automated tasks to complete personal software solutions.
 
 ---
 
-## **What You’ll Learn**  
-🔹 **Loops** – Create automated workflows with triggers and actions.  
-🔹 **Blocks** – Modular components that power your workflows.  
-🔹 **Variables** – Store and manage dynamic data within your automation.  
-🔹 **API Integrations** – Connect external services and enhance automation.  
+## **Core Concepts**
 
-Whether you're a **beginner** or an **advanced user**, this documentation will guide you through every step of using **Magic Loops** effectively.  
+### **1. Component Hierarchy** 
+Magic Loops uses a three-tier architecture:
+
+🧱 **Blocks**
+- Foundational components
+- Tiny programs for specific tasks
+- AI-powered mini-functions
+
+🔄 **Loops**
+- Combine multiple Blocks
+- Create complete workflows
+- Function as AI-powered APIs
+
+📱 **Apps**
+- Use multiple Loops
+- Include user interfaces
+- Create complete software solutions
+
+### **2. Building Blocks**
+
+#### **Default Blocks**
+Pre-configured components for common tasks:
+- Time scheduling
+- Data processing
+- API integration
+- Web scraping
+- And more...
+
+#### **Custom Blocks**
+Create your own specialized components:
+- Tailored to your needs
+- Extended functionality
+- Reusable across Loops
+
+#### **Block Templates**
+Ready-to-use templates for quick development:
+- Batch processing
+- Data visualization
+- Spreadsheet integration
 
 ---
 
-## **Video Introduction** 🎥  
-Watch this introductory video to get started with Magic Loops:  
+## **Getting Started**
 
-<iframe width="640" height="402" src="https://www.loom.com/embed/2575ee0a255c4e04bcd0d64c5266d94c?sid=d3ef2d96-3cf4-4663-bcfc-7e2797ae5feb" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>  
+### **1. Choose Your Starting Point**
+- **Block Level** → Create custom automation components
+- **Loop Level** → Build complete workflows
+- **App Level** → Develop full software solutions
+
+### **2. Explore the Documentation**
+✅ [Blocks](blocks.md) → Learn about the building blocks
+✅ [Loops](loops.md) → Understand workflow automation
+✅ [Templates](templates.md) → Use pre-built solutions
+✅ [Apps](apps.md) → Build complete applications
 
 ---
 
-## **Get Started**  
-To begin, explore the following sections:  
-✅ **[Loops](https://silver-guacamole-rj9jrvgvr6525v6q-3000.app.github.dev/docs/loops)** – Learn how to create and configure automation workflows.  
-✅ **[Blocks](https://silver-guacamole-rj9jrvgvr6525v6q-3000.app.github.dev/docs/blocks)** – Discover the building blocks of Magic Loops.  
-✅ **[Dashboard](https://silver-guacamole-rj9jrvgvr6525v6q-3000.app.github.dev/docs/dashboard)** – Understand how to manage and monitor your automation.  
+## **Example: Building Your First Automation**
 
-Start building your own **Magic Loops** and automate your workflows like a pro! 🚀
+```json
+{
+  "name": "Simple Newsletter",
+  "type": "loop",
+  "blocks": [
+    {
+      "type": "time",
+      "schedule": "daily_9am"
+    },
+    {
+      "type": "scrape",
+      "source": "news_website"
+    },
+    {
+      "type": "llm",
+      "action": "summarize"
+    },
+    {
+      "type": "email",
+      "action": "send_summary"
+    }
+  ]
+}
+```
+
+---
+
+## **Resources**
+
+### **Quick Links**
+- [Dashboard Overview](dashboard.md)
+- [Block Reference](blocks.md)
+- [API Documentation](api-endpoint.md)
+- [Templates Gallery](templates.md)
+
+### **Community**
+- [Discord Community](https://discord.gg/magicloops)
+- [GitHub Repository](https://github.com/magicloops)
+- [Blog](https://blog.magicloops.ai)
+
+---
+
+## **Next Steps**
+Ready to start building? Choose your path:
+1. [Create Your First Block](blocks.md)
+2. [Build a Loop](loops.md)
+3. [Deploy an App](apps.md)

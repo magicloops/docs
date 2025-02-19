@@ -4,24 +4,33 @@ const sidebars = {
           type: 'category',
           label: 'Introduction',
           items: [
+              'intro',
               'dashboard',
               'manual-loop'
           ],
       },
       {
           type: 'category',
-          label: 'Automation Components',
+          label: 'Core Components',
           items: [
-              'loops',
               'blocks',
-              'time-trigger',
-              'runs',
-              'output-variable'
+              'loops',
+              'apps'
           ],
       },
       {
           type: 'category',
-          label: 'Technical & API Concepts',
+          label: 'Building Blocks',
+          items: [
+              'time-trigger',
+              'runs',
+              'output-variable',
+              'templates'
+          ],
+      },
+      {
+          type: 'category',
+          label: 'Technical Concepts',
           items: [
               'authorization-token',
               'api-endpoint',
@@ -32,10 +41,9 @@ const sidebars = {
       },
       {
           type: 'category',
-          label: 'Data Processing & Scraping',
+          label: 'Data & Integration',
           items: [
-              'scrape',
-              'templates'
+              'scrape'
           ],
       }
   ],
