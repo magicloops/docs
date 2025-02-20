@@ -23,22 +23,22 @@
 
 ## **Types of Apps**
 
-### **1. Automation Apps** 🤖
+### **1. Automation Apps** 
 - Task automation
 - Workflow management
 - Process optimization
 
-### **2. Integration Apps** 🔗
+### **2. Integration Apps** 
 - Service connectors
 - Data synchronization
 - API management
 
-### **3. Business Apps** 💼
+### **3. Business Apps** 
 - Customer management
 - Resource planning
 - Analytics dashboards
 
-### **4. Personal Apps** 👤
+### **4. Personal Apps** 
 - Personal automation
 - Life management
 - Custom tools
