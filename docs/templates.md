@@ -9,19 +9,19 @@
 
 Block Templates are pre-built, configurable blocks designed for specific tasks:
 
-### **1. Loop Batch Runner** 🔄
+### **1. Loop Batch Runner** 
 - Executes multiple Magic Loops in sequence
 - Processes arrays of inputs efficiently
 - Handles API responses and error management
 - Perfect for bulk operations
 
-### **2. QuickChartData Viz** 📊
+### **2. QuickChartData Viz** 
 - Visualizes data using QuickChart
 - Supports multiple chart types
 - Customizable styling and formatting
 - Ideal for data reporting
 
-### **3. Sheety (GET)** 📑
+### **3. Sheety (GET)** 
 - Integrates with Google Sheets via Sheety
 - Fetches spreadsheet data automatically
 - Supports authentication
