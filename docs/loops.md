@@ -22,20 +22,20 @@
 
 ## **Loop Components**
 
-### **1. Triggers** ⚡
+### **1. Triggers** 
 What starts the Loop:
 - Time-based scheduling
 - API calls
 - Webhook events
 - Manual activation
 
-### **2. Blocks** 🧱
+### **2. Blocks** 
 The tasks the Loop performs:
 - Default Blocks (pre-configured)
 - Custom Blocks (user-created)
 - Block Templates (ready-to-use)
 
-### **3. Logic** 🔄
+### **3. Logic** 
 How the Loop makes decisions:
 - Conditional execution
 - Error handling
@@ -82,22 +82,22 @@ How the Loop makes decisions:
 
 ## **Loop Types**
 
-### **1. Automation Loops** 🤖
+### **1. Automation Loops** 
 - Automate repetitive tasks
 - Schedule regular operations
 - Process data automatically
 
-### **2. Integration Loops** 🔗
+### **2. Integration Loops** 
 - Connect different services
 - Transform data between systems
 - Synchronize information
 
-### **3. Analysis Loops** 📊
+### **3. Analysis Loops** 
 - Process and analyze data
 - Generate reports
 - Monitor metrics
 
-### **4. Response Loops** 📡
+### **4. Response Loops** 
 - React to events
 - Handle webhooks
 - Process user inputs
