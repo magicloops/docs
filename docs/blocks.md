@@ -7,17 +7,17 @@
 
 ## **Component Hierarchy**
 
-### **1. Blocks** 🧱
+### **1. Blocks** 
 - Foundational components
 - Perform specific tasks
 - Function as AI-powered mini-programs or APIs
 
-### **2. Loops** 🔄
+### **2. Loops** 
 - Use multiple Blocks
 - Function as AI-powered functions or APIs
 - Automate complete workflows
 
-### **3. Apps** 📱
+### **3. Apps** 
 - Use multiple Loops with a UI
 - Are essentially AI-generated Personal Software
 - Provide complete solutions
@@ -26,7 +26,7 @@
 
 ## **Types of Blocks**
 
-### **1. Default Blocks** ⚡
+### **1. Default Blocks** 
 Pre-configured components for common tasks:
 - **Time Block** → Task scheduling
 - **SMS Block** → Text message sending
@@ -46,12 +46,12 @@ Pre-configured components for common tasks:
 - **Hook Notify Block** → Webhook notifications
 - **API Response Block** → API responses
 
-### **2. Custom Blocks** 🛠️
+### **2. Custom Blocks** 
 - User-created custom blocks
 - Tailored to specific use cases
 - Extend base functionality
 
-### **3. Block Templates** 📋
+### **3. Block Templates** 
 Ready-to-use templates for common tasks:
 - **Loop Batch Runner** → Batch execution
 - **QuickChartData Viz** → Data visualization
