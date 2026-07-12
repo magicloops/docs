@@ -26,8 +26,8 @@ Watch this introductory video to get started with Magic Loops:
 
 ## **Get Started**  
 To begin, explore the following sections:  
-✅ **[Loops](https://silver-guacamole-rj9jrvgvr6525v6q-3000.app.github.dev/docs/loops)** – Learn how to create and configure automation workflows.  
-✅ **[Blocks](https://silver-guacamole-rj9jrvgvr6525v6q-3000.app.github.dev/docs/blocks)** – Discover the building blocks of Magic Loops.  
-✅ **[Dashboard](https://silver-guacamole-rj9jrvgvr6525v6q-3000.app.github.dev/docs/dashboard)** – Understand how to manage and monitor your automation.  
+✅ **[Loops](/docs/loops)** – Learn how to create and configure automation workflows.<br />
+✅ **[Blocks](/docs/blocks)** – Discover the building blocks of Magic Loops.<br />
+✅ **[Dashboard](/docs/dashboard)** – Understand how to manage and monitor your automation.
 
 Start building your own **Magic Loops** and automate your workflows like a pro! 🚀

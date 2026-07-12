@@ -67,7 +67,7 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 ```
 
 🔹 **For more information on generating and using authorization tokens, visit:**  
-➡️ **[authorization-token](https://silver-guacamole-rj9jrvgvr6525v6q-3000.app.github.dev/docs/authorization-token)**
+➡️ **[authorization-token](/docs/authorization-token)**
 
 **Response (JSON Example):**
 ```json
@@ -86,4 +86,4 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 ✅ **Follow RESTful principles**: Maintain a consistent and intuitive endpoint structure (`/users/{id}` instead of `/getUserById`).  
 ✅ **Ensure security**: Implement authentication, SSL/TLS encryption, and request rate limiting.  
 ✅ **Handle errors properly**: Return meaningful error codes and messages (`400 Bad Request`, `401 Unauthorized`, `500 Internal Server Error`).  
-✅ **Optimize performance**: Use caching, pagination, and filtering to improve response times.  
+✅ **Optimize performance**: Use caching, pagination, and filtering to improve response times.
